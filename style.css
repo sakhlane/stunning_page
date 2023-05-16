@@ -1,0 +1,210 @@
+/* ************ */
+/* common css */
+/* ********** */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.common-btn {
+    text-decoration: none;
+    border-radius: 20px;
+    padding: 14px 18px;
+    background-color: #FFD8DB;
+    font-size: 12px;
+    color: #A389CC;
+}
+
+.blue-btn {
+    background-color: #5243C0;
+    color: #ffffff;
+}
+
+/* *********** */
+/* header part */
+/* *********** */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    height: 70px;
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+    cursor: pointer;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    margin: 0px 18px;
+    text-transform: capitalize;
+    color: #B5B4B2;
+    font-size: 12px;
+}
+
+nav ul li a:hover {
+    border-bottom: 3px solid #8071D0;
+    color: #FE5D20;
+}
+
+nav ul li a.active-link {
+    border-bottom: 3px solid #8071D0;
+    color: #000000;
+}
+
+
+/* *********** */
+/* main part */
+/* ********** */
+
+main {
+    display: flex;
+    box-sizing: border-box;
+}
+
+/* ---------------- */
+/* left side style */
+/* ----------------- */
+
+.left_side {
+    width: 40%;
+    padding: 50px 0px 0px 70px;
+}
+
+.heading_content h1 {
+    padding: 0px 0px 20px 0px;
+    font-size: 40px;
+
+}
+
+.left_side_para {
+    font-size: 13px;
+    line-height: 20px;
+    color: #595554;
+}
+
+.heading_content h1 .dot-color {
+    color: #5243C0;
+    font-size: 50px;
+}
+
+.left_side_button {
+    display: flex;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+.left_side_cards {
+    padding-top: 30px;
+}
+
+.left_side_button img {
+
+    margin: 0px 10px;
+    height: 40px;
+}
+
+.card {
+    background-color: #F4F4F4;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px;
+    margin-bottom: 8px;
+    font-size: 13px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.card.active {
+    background-color: #ffffff;
+
+    box-shadow: 5px 5px lightgray;
+}
+
+.card.active .tick-gray {
+    display: none;
+}
+
+.card.active .tick-blue {
+    display: block;
+}
+
+.card .tick-blue {
+    display: none;
+}
+
+.card:hover {
+    background-color: #ffffff;
+
+    box-shadow: 5px 5px lightgray;
+}
+
+.card:hover .tick-gray {
+    display: none;
+}
+
+.card:hover .tick-blue {
+    display: block;
+}
+
+.card .card_content {
+    width: 90px;
+}
+
+.card .date {
+    color: #BFBEBC;
+}
+
+.card .card_icon {
+    display: inline-block;
+    height: 14px;
+    width: 28px;
+    border-radius: 20px;
+    background-color: #FED7DA;
+}
+
+.card .card_icon.orange {
+    background-color: #FD6534;
+}
+
+.card .card_icon.blue {
+    background-color: #9ED095;
+}
+
+.card .card_icon.red {
+    background-color: #FFE4A0;
+}
+
+/* --------------- */
+/* right side style */
+/* ----------------- */
+.right_side {
+    width: 60%;
+    text-align: center;
+}
+
+.right_side img {
+    height: 450px;
+    padding-top: 40px;
+}
